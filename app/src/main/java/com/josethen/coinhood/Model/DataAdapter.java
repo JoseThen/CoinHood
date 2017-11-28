@@ -1,4 +1,4 @@
-package com.josethen.coinhood;
+package com.josethen.coinhood.Model;
 
 import com.robinhood.spark.SparkAdapter;
 
@@ -10,13 +10,13 @@ public class DataAdapter extends SparkAdapter {
     private final float[] yData;
     private final Random random;
 
-    DataAdapter() {
+    public DataAdapter() {
         random = new Random();
         yData = new float[50];
         randomize();
     }
 
-    void randomize() {
+    public void randomize() {
         for (int i = 0, count = yData.length; i < count; i++) {
             yData[i] = random.nextFloat();
         }

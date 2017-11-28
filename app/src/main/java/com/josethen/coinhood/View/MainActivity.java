@@ -1,18 +1,20 @@
-package com.josethen.coinhood;
+package com.josethen.coinhood.View;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.robinhood.spark.SparkAdapter;
+import com.josethen.coinhood.Helpers.Checkers;
+import com.josethen.coinhood.Model.DataAdapter;
+import com.josethen.coinhood.R;
 import com.robinhood.spark.SparkView;
-
-import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     private DataAdapter adapter;
     private TextView scrubInfoTextView;
+    private TextView wifiInfoTextView;
+    Checkers checking = new Checkers();
 
 
 
@@ -20,6 +22,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        wifiInfoTextView = findViewById(R.id.wifi_info_textview);
+
+
+
+
+
+        boolean isConnected = checking.www(this);
+        if (isConnected){
+            wifiInfoTextView.setText(R.string.online);
+        }
+        else{
+            wifiInfoTextView.setText(R.string.offline);
+        }
 
         SparkView sparkView =  findViewById(R.id.sparkview);
         scrubInfoTextView = findViewById(R.id.numberTextView);
@@ -42,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 adapter.randomize();
+
             }
         });
 

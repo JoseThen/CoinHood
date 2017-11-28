@@ -7,4 +7,25 @@
     <string name="scrub_format">Scrubbing value: %1$s</string>
     <string name="randomize">Randomize</string>
     <string name="scrubbing_value">Scrubbing Value</string>
+    <string name="online">ONLINE</string>
+    <string name="offline">OFFLINE</string>
+    <string name="checking_connection">Checking Connection</string>
+    <string name="title_activity_coin_list">CoinList</string>
+   
+    
+    <string-array name="coinAcronym">
+        <item>BTC</item>
+        <item>XRP</item>
+        <item>ETC</item>
+        <item>LTC</item>
+    </string-array>
+    
+    <string-array name="base">
+        <item>Bitcoin</item>
+        <item>Ripple</item>
+        <item>Etherum</item>
+        <item>Litecoin</item>
+    </string-array>
+    
+    
 </resources>

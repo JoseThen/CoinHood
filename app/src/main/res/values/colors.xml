@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#e3e3e3</color>
+    <color name="colorPrimary">#9749f7</color>
     <color name="colorPrimaryDark">#4a4e51</color>
-    <color name="colorAccent">#9749f7</color>
+    <color name="colorAccent">#e3e3e3</color>
     <color name="colorExtra">#22B7CD</color>
 
     <color name="xrpBlack">#333333</color>
     <color name="xrpBlue">#27a2db</color>
     <color name="xrpGray">#777777</color>
+    <color name="white">#FFFFFF</color>
 </resources>
