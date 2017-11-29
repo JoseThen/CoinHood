@@ -11,21 +11,39 @@
     <string name="offline">OFFLINE</string>
     <string name="checking_connection">Checking Connection</string>
     <string name="title_activity_coin_list">CoinList</string>
-   
-    
+
+
     <string-array name="coinAcronym">
         <item>BTC</item>
         <item>XRP</item>
         <item>ETC</item>
         <item>LTC</item>
     </string-array>
-    
+
     <string-array name="base">
         <item>Bitcoin</item>
         <item>Ripple</item>
         <item>Etherum</item>
         <item>Litecoin</item>
     </string-array>
-    
-    
+    <string name="title_activity_exchange_tabs">Exchanges</string>
+    <string name="tab_text_1">Coinbase</string>
+    <string name="tab_text_2">GDAX</string>
+    <string name="tab_text_3">BitStamp</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format"> %1$d
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam
+        harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam
+        harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam
+        harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
+    </string>
+
+
+
+
 </resources>
