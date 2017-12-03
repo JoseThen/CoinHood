@@ -9,16 +9,18 @@ import java.util.Random;
 public class DataAdapter extends SparkAdapter {
     private final float[] yData;
     private final Random random;
+    private float min = 50.0f;
+    private float max = 60.0f;
 
     public DataAdapter() {
         random = new Random();
-        yData = new float[50];
+        yData = new float[24];
         randomize();
     }
 
     public void randomize() {
         for (int i = 0, count = yData.length; i < count; i++) {
-            yData[i] = random.nextFloat();
+            yData[i] = random.nextFloat() * (max - min) + min;
         }
         notifyDataSetChanged();
     }

@@ -22,7 +22,10 @@
         <activity
             android:name=".View.ExchangeTabs"
             android:label="@string/title_activity_exchange_tabs"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".View.CoinListActivity" >
+
+        </activity>
     </application>
 
 </manifest>

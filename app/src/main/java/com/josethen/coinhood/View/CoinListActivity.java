@@ -36,7 +36,10 @@ public class CoinListActivity extends AppCompatActivity {
         coinListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Coin moneda = (Coin) adapterView.getItemAtPosition(i); // Make a coin object to copy the object created the for list entry
+                String coin = moneda.getBase(); // Get the base name for that entry
                 Intent charts = new Intent(CoinListActivity.this, ExchangeTabs.class);
+                charts.putExtra("coin", coin); // Put the base inside of an intent
                 startActivity(charts);
             }
         });
